@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "lib"                     : ["ES2019"],
+    "module"                  : "commonjs",
+    "target"                  : "ES2019",
+    "noImplicitAny"           : true,
+    "sourceMap"               : true,
+    "typeRoots"               : ["node_modules/@types"],
+    "outDir"                  : "build",
+    "declaration"             : true,
+    "emitDecoratorMetadata"   : true,
+    "experimentalDecorators"  : true,
+    "strictNullChecks"        : true
+  },
+  "include": [
+      "src/**/*"
+  ],
+  "exclude": [
+      "node_modules",
+      "log",
+      "**/*.rdb",
+      "src/test"
+  ]
+}

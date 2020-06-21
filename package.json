@@ -1,0 +1,22 @@
+{
+  "name": "cows-and-bulls",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/index.js",
+  "scripts": {
+    "start": "node build/index.js",
+    "test": "jest --coverage"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "reflect-metadata": "^0.1.13",
+    "lodash": "latest"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.0",
+    "@types/lodash": "latest",
+    "jest": "^26.0.1",
+    "ts-jest": "^26.1.0"
+  }
+}

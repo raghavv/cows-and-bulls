@@ -3,7 +3,7 @@ import { AutoGuesser } from '../auto-guesser'
 
 describe('Common Functions', () => {
 
-  const guesser = new AutoGuesser()
+  const guesser: AutoGuesser = new AutoGuesser()
 
   test('Unique digits in a number', () => {
     expect(guesser.validateGuess(NaN)).toMatch('invalid')
@@ -98,7 +98,7 @@ describe('Verifying guessing', () => {
     ar[row][1] = ar[row][2] = 10; row++;
     
     const possibilities = [4312, 4321]
-    expect(possibilities).toContain(guesser.probableGuess(ar, true))
+    expect(possibilities).toContain(guesser.probableGuess(ar))
   })
 
   test('weightedGuess: exceptions', () => {
